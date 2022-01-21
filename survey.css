@@ -1,0 +1,116 @@
+body{
+    background-color:powderblue;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+}
+p{
+    font-size:20px;
+    font-weight:bold;
+}
+.outside{
+    background-color:seashell;
+    width:800px;
+    border-radius: 4px;
+    margin:auto;
+    padding:10px 12px 10px 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.12);
+}
+.button{
+    font-size: 1em;
+    width:100px;
+    height:40px;
+    margin:5px;
+    border-radius: 4px;
+    border:2px solid #c0c0c0;
+    background-color: teal;
+    color:white;
+}
+fieldset{
+    width:600px;
+    margin:10px;
+    border:1px solid lightgrey;
+    display: inline-block;
+}
+legend{
+    font-weight: 700;
+    font-size:20px;
+}
+.labels{
+    display: inline-block;
+    text-align:right;
+    width:40%;
+    padding:10px;
+    vertical-align: middle;
+
+}
+.fields{
+    display:inline-block;
+    text-align: left;
+    width:280px;
+    vertical-align: middle;
+}
+.input-fields{
+    width:300px;
+    height:30px;
+    padding:5px;
+    margin:10px;
+    border-radius: 4px;
+    border:1px solid #c0c0c0;
+}
+.dropdown{
+    width:300px;
+    height: 30px;
+    padding:5px;
+    margin:10px 12px 10px 12px;
+    border-radius:4px;
+    border:1px solid #c0c0c0;
+}
+.button:hover{
+    background-color:mediumturquoise;
+}
+@media screen and (max-width:833px) {
+    .outside{
+        width:80%;
+    }
+    .fields{
+        display:inline-block;
+        text-align: left;
+        width:40%;
+        vertical-align: middle;
+    }
+    fieldset{
+        width:80%;
+    }
+    .input-fields{
+        width:80%;
+    }
+    .dropdown{
+        width:90%;
+    }
+}
+@media screen and (max-width:520px) {
+    .outside{
+        width:80%;
+    }
+    .fields{
+        width:80%;
+        float:left;
+    }
+    .labels{
+       width: 100%;
+      text-align: left;
+    
+    }
+    fieldset{
+        width:100%;
+    }
+    .inputfields
+    {
+        width:100%;
+    }
+    .dropdown{
+        width:100%;
+    }
+}

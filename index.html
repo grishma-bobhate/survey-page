@@ -1,0 +1,166 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+        <link href="survey.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+    <div class="outside">
+        
+        <h1 id="title">Registration form for Webinar on Salesforce Development</h1>
+        <p id="description">Note: Install GoToWebinar App for having interactive sessions</p>
+
+        <button type="button" class="button"
+       onclick="document.location='https://support.goto.com/webinar/help/download-now-g2w010002'">Click Here</button>
+<form id="survey-form" action="page.html" method="post">
+        <!---------Personal Details-->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <div class="labels">
+            <label for="name" id="name">Name:</label>
+            </div> 
+
+            <div class="fields">
+                <input type="text" id="name" class="input-fields" placeholder="Enter your name" required>
+            </div>
+
+            <div class="labels">
+                <label for="Address" id="name">Address:</label>
+            </div>
+
+            <div class="fields">
+                <input type="text" required id="name" class="input-fields" placeholder="Enter your Address here">
+            </div>
+
+            <div class="labels">
+                <label for="email" id="email">Email-ID:</label>     
+            </div>
+
+            <div class="fields">
+                <input type="email" required id="email" name="email" class="input-fields" placeholder="Enter your email ID" >
+            </div>
+
+            <div class="labels">
+                <label for="phone" id="phone">Phone number:</label>     
+            </div>
+
+            <div class="fields">
+                <input type="tel" required id="phone" name="phone" class="input-fields" placeholder="Enter 10 digit number">
+               
+            </div>
+
+            <div class="labels">
+                <label for="name" id="name-label">IQ:</label>     
+            </div>
+
+            <div class="fields">
+                <input type="number" id="number" class="input-fields" placeholder="Enter IQ here" required>
+            </div>
+ <!-- ------------------Radio Buttons-------------------------------- -->
+
+            <div class="labels">
+                <label for="Gender"> Gender:</label>
+            </div>
+            <div class="fields">
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender"  value="other">Other
+            </div>
+
+            <div class="labels">
+                <label for="name"> Date of the birth:</label>
+            </div>
+
+            <div class="fields">
+                <input type="date" name="b-day">
+            </div>
+        </fieldset>
+<!-- ------------------Checkboxes-------------------------------- -->
+        <fieldset>
+            <div class="labels">
+            <label for="name">Interested for others webinars:</label></div>
+
+            <div class="fields">
+            <input type="checkbox" name="Full-Stack">
+            <label for="name">Full Stack Developer</label><br>
+            <input type="checkbox" name="Python">
+            <label for="name"> Python Django Developer</label><br>
+            <input type="checkbox" name="SAP">
+            <label for="name">SAP Developer</label><br>
+            <input type="checkbox" name="PLSQL">
+            <label for="name">PL SQL Developer</label><br>
+            <input type="checkbox" name="Analyst">
+            <label for="name">Data Analyst</label><br>
+            </div>
+        </fieldset>
+<!-- -----------------Dropdown menus--------------------------------- -->
+        <fieldset>
+            <div class="labels">
+                <label for="name">Profession:</label>
+            </div>
+            <div class="fields">
+                <select id="dropdown" class="dropdown" name="profession">
+                    <option value="Faculty">Faculty</option>
+                    <option value="Research Scholar">Research Scholar</option>
+                    <option value="UG student">UG Student</option>
+                    <option value="PG Student">PG Student</option>
+                    <option value="Software">Software Developer</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <div class="labels">
+                <label for="name">Education Level Completed</label>
+            </div>
+            <div class="fields">
+                <select id="dropdown" class="dropdown"name="education">
+                    <option value="University">University</option>
+                    <option value="College">Graduation Class</option>
+                    <option value="HighSchool">High SChool</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+        </fieldset>
+<!-- --------------------Text Areas------------------------------ -->
+
+        <fieldset>
+            <legend>Reference Section</legend>
+                <div class="labels">
+                    <label for="name">Write Down Skills</label>
+                </div>
+
+                <div class="fields">
+                    <textarea id="skills-details" name="skills-details" class="input-fields" 
+                    style="height:60px;resize:vertical;" cols="1" rows="1" placeholder="Mention your programming skills" required>
+                </textarea>
+                </div>
+
+                <div class="labels">
+                    <label for="name">Reference Contact Details</label>
+                </div>
+
+                <div class="fields">
+                    <textarea id="skills-details" name="skills-details" class="input-fields" 
+                    style="height:60px;resize:vertical;" cols="1" rows="1" placeholder="Mention Reference details" required>
+                </textarea>
+                </div>
+                <div class="labels">
+                    <label for="myfile">Upload Police Clearance Certificate, Academics Certificates 
+                        and Medical Certifiates here:</label>
+                </div>
+                
+                <div class="fields">
+                    <input type="file" id="myfile" name="myfile">
+                </div>
+        </fieldset>
+        <br>
+            <button class="button" id="submit" type="button">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
